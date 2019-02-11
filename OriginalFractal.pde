@@ -1,6 +1,5 @@
 Star[] stars = new Star[50];
 public void setup(){
-  background(0);
   size (450,300);
   for (int i=0; i<stars.length; i++){
     stars[i]=new Star();
@@ -8,6 +7,7 @@ public void setup(){
 }
 
 public void draw(){
+  background (0);
   myFractal (140,90,140);
   for(int i = 0; i<stars.length; i++){
     stars[i].show();
